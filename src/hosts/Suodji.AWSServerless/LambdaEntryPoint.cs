@@ -5,6 +5,8 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Amazon.Extensions.Configuration.SystemsManager;
+using Microsoft.Extensions.Configuration;
 
 namespace Suodji.AWSServerless
 {
@@ -27,6 +29,7 @@ namespace Suodji.AWSServerless
         protected override void Init(IWebHostBuilder builder)
         {
             builder
+                .ConfigureAppConfiguration(b => { b.AddSystemsManager("/suodji/"); })
                 .UseStartup<Startup>();
         }
     }

@@ -11,8 +11,8 @@
 				"Handler": "Suodji.AWSServerless::Suodji.AWSServerless.LambdaEntryPoint::FunctionHandlerAsync",
 				"Runtime": "dotnetcore2.1",
 				"CodeUri": "",
-				"MemorySize": 256,
-				"Timeout": 30,
+				"MemorySize": 128,
+				"Timeout": 3,
 				"Role": null,
 				"Policies": [ "AWSLambdaFullAccess" ],
 				"Events": {

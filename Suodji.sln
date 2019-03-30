@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{162E9D8B-19AE-46C4-8AB7-E54B710CDFC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{915C92F7-6E3C-4057-9AF0-1A84E59492C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Suodji.Core", "src\Suodji.Core\Suodji.Core.csproj", "{224A5CC7-9B3A-44AE-A0F9-0CDAB04DADD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soudji.Core.Tests", "tests\Soudji.Core.Tests\Soudji.Core.Tests.csproj", "{CBCBED77-AA1D-45CC-8658-3433F060D739}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hosts", "hosts", "{41D101EF-DF0B-4D11-B939-35B138C02F80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Suodji.AWSServerless", "src\hosts\Suodji.AWSServerless\Suodji.AWSServerless.csproj", "{68780252-B9B1-4242-84B3-A42C59B651B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hosts", "hosts", "{B693AFF7-78FE-4E35-AA78-8143C80A3C94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Suodji.AWSServerless.Tests", "tests\hosts\Suodji.AWSServerless.Tests\Suodji.AWSServerless.Tests.csproj", "{81CBADF4-E30F-41C3-A047-41B0B34D19C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{224A5CC7-9B3A-44AE-A0F9-0CDAB04DADD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224A5CC7-9B3A-44AE-A0F9-0CDAB04DADD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224A5CC7-9B3A-44AE-A0F9-0CDAB04DADD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224A5CC7-9B3A-44AE-A0F9-0CDAB04DADD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCBED77-AA1D-45CC-8658-3433F060D739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCBED77-AA1D-45CC-8658-3433F060D739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCBED77-AA1D-45CC-8658-3433F060D739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCBED77-AA1D-45CC-8658-3433F060D739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68780252-B9B1-4242-84B3-A42C59B651B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68780252-B9B1-4242-84B3-A42C59B651B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68780252-B9B1-4242-84B3-A42C59B651B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68780252-B9B1-4242-84B3-A42C59B651B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81CBADF4-E30F-41C3-A047-41B0B34D19C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CBADF4-E30F-41C3-A047-41B0B34D19C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CBADF4-E30F-41C3-A047-41B0B34D19C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CBADF4-E30F-41C3-A047-41B0B34D19C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{224A5CC7-9B3A-44AE-A0F9-0CDAB04DADD5} = {162E9D8B-19AE-46C4-8AB7-E54B710CDFC5}
+		{CBCBED77-AA1D-45CC-8658-3433F060D739} = {915C92F7-6E3C-4057-9AF0-1A84E59492C2}
+		{41D101EF-DF0B-4D11-B939-35B138C02F80} = {162E9D8B-19AE-46C4-8AB7-E54B710CDFC5}
+		{68780252-B9B1-4242-84B3-A42C59B651B6} = {41D101EF-DF0B-4D11-B939-35B138C02F80}
+		{B693AFF7-78FE-4E35-AA78-8143C80A3C94} = {915C92F7-6E3C-4057-9AF0-1A84E59492C2}
+		{81CBADF4-E30F-41C3-A047-41B0B34D19C1} = {B693AFF7-78FE-4E35-AA78-8143C80A3C94}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E7246EC-5371-4FC1-BD26-3730AA77FC67}
+	EndGlobalSection
+EndGlobal

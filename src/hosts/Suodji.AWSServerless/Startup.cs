@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Artice.Core;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Suodji.Core;
 using Suodji.Infrastructure;
+using Artice.LogicCore;
+using Artice.Telegram;
 
 namespace Suodji.AWSServerless
 {
@@ -33,6 +36,10 @@ namespace Suodji.AWSServerless
             };
             services.AddSingleton(appSettings);
 
+            services.AddArtice<ArticeModule>(builder =>
+	            builder.UseTelegramProvider(configuration => configuration
+		            .SetAccessToken(Configuration["telegram:token"])));
+
             // Add S3 to the ASP.NET Core dependency injection framework.
             //services.AddAWSService<Amazon.S3.IAmazonS3>();
         }
@@ -50,7 +57,9 @@ namespace Suodji.AWSServerless
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseArtice();
+			app.UseMvc();
+            
         }
     }
 }

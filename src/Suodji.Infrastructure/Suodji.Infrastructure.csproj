@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Artice.Core" Version="0.9.0-pre01" />
-    <PackageReference Include="Artice.LogicCore" Version="0.9.0-pre01" />
-    <PackageReference Include="Artice.Telegram" Version="0.9.0-pre02" />
+    <PackageReference Include="Artice.Core" Version="0.9.0-pre02" />
+    <PackageReference Include="Artice.LogicCore" Version="0.9.0-pre02" />
+    <PackageReference Include="Artice.Telegram" Version="0.9.0-pre03" />
   </ItemGroup>
 
 </Project>
